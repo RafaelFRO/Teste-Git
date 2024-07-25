@@ -116,5 +116,16 @@ PATCH: Aplica modificações parciais a um recurso.
 HEAD: Obtém apenas os cabeçalhos de resposta, sem o corpo da mensagem.
 OPTIONS: Obtém informações sobre os métodos HTTP suportados pelo servidor para um recurso.
 Esses métodos permitem realizar operações de leitura, criação, atualização, remoção e verificação de recursos em APIs RESTful, seguindo os princípios de manipulação de recursos e statelessness.
+---------------------------------------------------------------------------------------------------------------
+Em um sistema organizado em camadas de uma API, as responsabilidades das camadas geralmente são distribuídas da seguinte forma:
 
+Entity (Entidade): Esta camada representa os objetos de dados principais do domínio da aplicação. Ela encapsula as estruturas de dados que são armazenadas e manipuladas no banco de dados ou em memória. Normalmente, as entidades mapeiam diretamente para tabelas de banco de dados ou são estruturas de dados que refletem conceitos importantes do domínio da aplicação.
+
+Repository (Repositório): Responsável pelo acesso aos dados e pela persistência das entidades. Esta camada abstrai o banco de dados ou outra forma de armazenamento de dados subjacente. Ela encapsula todas as operações de leitura, escrita, atualização e remoção de dados do banco de dados, oferecendo uma interface de alto nível para que as outras camadas da aplicação possam interagir com os dados de forma independente da tecnologia de armazenamento utilizada.
+
+Service (Serviço): Concentra a lógica de negócio da aplicação. Aqui ficam as regras de negócio que coordenam a interação entre as entidades e controlam os fluxos de dados. Os serviços orquestram chamadas aos repositórios, validam dados, executam operações complexas e garantem a consistência das operações realizadas pela API. Eles encapsulam a lógica que não pertence diretamente às entidades ou aos controladores.
+
+Controller (Controlador): Responsável por receber requisições HTTP, interpretar parâmetros e delegar a execução para os serviços apropriados. Esta camada atua como um ponto de entrada para a API, expondo endpoints que são acessíveis externamente. Os controladores traduzem os dados da requisição para chamadas aos serviços e, em seguida, formatam as respostas retornadas pelos serviços em respostas HTTP adequadas para os clientes.
+
+Em resumo, cada camada em uma arquitetura organizada em camadas de uma API tem uma responsabilidade clara: as entidades representam os dados principais, os repositórios gerenciam o acesso e a persistência dos dados, os serviços implementam a lógica de negócio e os controladores lidam com a interação com o mundo externo através de requisições HTTP. Essa separação de responsabilidades promove um design modular, facilitando a manutenção, a escalabilidade e a testabilidade do sistema.
 
