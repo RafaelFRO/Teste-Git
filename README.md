@@ -91,3 +91,30 @@ Um cenário prático de polimorfismo na Programação Orientada a Objetos pode s
 4. Flexibilidade e Extensibilidade: A POO permite que novas funcionalidades sejam adicionadas com relativa facilidade. Novas classes podem ser criadas a partir de classes existentes através da herança, adicionando novos comportamentos sem modificar o código já existente.
 
 5. Encapsulamento e Segurança: O encapsulamento na POO protege os dados internos de um objeto e restringe o acesso direto a eles fora da classe. Isso promove a segurança e a integridade do sistema, garantindo que apenas os métodos apropriados possam manipular os dados internos de um objeto.
+----------------------------------------------------------------------------------
+O que é protocolo de comunicação HTTP e como funciona:
+
+O Protocolo de Transferência de Hipertexto (HTTP) é usado na web para comunicação entre clientes (como navegadores) e servidores. Funciona com requisições (como GET, POST) enviadas pelos clientes para obter recursos dos servidores, que respondem com dados (como HTML, imagens) e informações de status. É stateless, ou seja, não mantém estado entre requisições. HTTPS é uma versão segura com criptografia.
+
+O que é REST, e qual sua relação com o protocolo de comunicação HTTP:
+
+REST (Representational State Transfer) é um estilo arquitetural para sistemas distribuídos baseado em princípios simples e bem definidos. Ele utiliza o protocolo HTTP para definir operações sobre recursos através dos métodos padrões (GET, POST, PUT, DELETE). REST enfatiza a statelessness, onde cada requisição contém todas as informações necessárias, e utiliza URIs para identificar recursos e representações como JSON ou XML para transferência de dados.
+
+O que é Web API, e qual é a sua relação com REST:
+
+Uma Web API é uma interface que permite que aplicações se comuniquem pela internet usando padrões definidos. Ela especifica como os sistemas podem enviar e receber dados de forma padronizada. Muitas Web APIs seguem os princípios do REST, que define um estilo arquitetural para APIs web baseado em métodos HTTP (GET, POST, etc.), manipulação de recursos identificados por URIs, e a utilização de representações como JSON ou XML para transferência de dados.
+
+Métodos de solicitações HTTP utilizados pelo padrão REST e suas respectivas finalidades:
+
+Os principais métodos HTTP utilizados pelo padrão REST são:
+
+GET: Recupera dados de um recurso específico.
+POST: Submete dados para processamento ou criação de um recurso.
+PUT: Atualiza um recurso existente com os dados fornecidos.
+DELETE: Remove um recurso identificado pelo URI.
+PATCH: Aplica modificações parciais a um recurso.
+HEAD: Obtém apenas os cabeçalhos de resposta, sem o corpo da mensagem.
+OPTIONS: Obtém informações sobre os métodos HTTP suportados pelo servidor para um recurso.
+Esses métodos permitem realizar operações de leitura, criação, atualização, remoção e verificação de recursos em APIs RESTful, seguindo os princípios de manipulação de recursos e statelessness.
+
+
