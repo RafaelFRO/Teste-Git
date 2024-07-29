@@ -128,4 +128,42 @@ Service (Serviço): Concentra a lógica de negócio da aplicação. Aqui ficam a
 Controller (Controlador): Responsável por receber requisições HTTP, interpretar parâmetros e delegar a execução para os serviços apropriados. Esta camada atua como um ponto de entrada para a API, expondo endpoints que são acessíveis externamente. Os controladores traduzem os dados da requisição para chamadas aos serviços e, em seguida, formatam as respostas retornadas pelos serviços em respostas HTTP adequadas para os clientes.
 
 Em resumo, cada camada em uma arquitetura organizada em camadas de uma API tem uma responsabilidade clara: as entidades representam os dados principais, os repositórios gerenciam o acesso e a persistência dos dados, os serviços implementam a lógica de negócio e os controladores lidam com a interação com o mundo externo através de requisições HTTP. Essa separação de responsabilidades promove um design modular, facilitando a manutenção, a escalabilidade e a testabilidade do sistema.
+---------------------------------------------------------------------------------------------------------------
+O que é um padrão de projeto e porque utilizamos:
+
+Um padrão de projeto é uma solução reutilizável para problemas comuns que surgem no desenvolvimento de software. Ele fornece uma estrutura e diretrizes para abordar problemas específicos de forma eficiente, promovendo boas práticas e consistência no design. Utilizamos padrões de projeto para melhorar a modularidade, a escalabilidade e a manutenção do código, além de facilitar a comunicação entre desenvolvedores ao adotar soluções bem definidas. Ao aplicar padrões, evitamos reinventar a roda e podemos focar em aspectos mais criativos e específicos do projeto. Em suma, eles ajudam a criar sistemas mais robustos e de fácil entendimento.
+
+Explique o conceito de arquitetura de solfware e seus propósitos:
+
+A arquitetura de software refere-se à estrutura organizacional fundamental de um sistema de software, composta por seus componentes principais, suas interações e os princípios que orientam seu design e evolução. É um modelo que define como o sistema será estruturado e como os diferentes elementos interagirão para atingir os objetivos desejados.
+
+Propósitos da arquitetura de software:
+
+Visão Geral e Estrutura: Fornece uma visão clara da estrutura do sistema, facilitando a compreensão de como os diferentes componentes e módulos se inter-relacionam.
+
+Facilita Decisões: Ajuda na tomada de decisões sobre tecnologias, design e outras escolhas importantes, baseando-se em requisitos técnicos e de negócios.
+
+Escalabilidade e Manutenção: Garante que o sistema possa crescer e se adaptar a novas necessidades sem exigir grandes reescritas, promovendo a manutenção mais eficiente.
+
+Qualidade e Desempenho: Estabelece as bases para garantir que o sistema atenda a requisitos de qualidade, como desempenho, segurança e confiabilidade.
+
+Comunicação: Serve como um meio de comunicação entre as partes interessadas (desenvolvedores, clientes, etc.), alinhando expectativas e garantindo que todos compreendam a visão do sistema.
+
+Em resumo, a arquitetura de software é essencial para criar sistemas organizados, robustos e adaptáveis, além de ser uma base crucial para o sucesso de projetos de software complexos.
+
+O que significa SOLID e quais seus princípios:
+
+SOLID é um acrônimo que representa cinco princípios fundamentais do design de software orientado a objetos, visando melhorar a modularidade e a manutenção do código. Os princípios SOLID são:
+
+S - Single Responsibility Principle (SRP): Uma classe deve ter apenas uma razão para mudar, significando que deve ter uma única responsabilidade ou função.
+
+O - Open/Closed Principle (OCP): O software deve ser aberto para extensão, mas fechado para modificação, permitindo que novas funcionalidades sejam adicionadas sem alterar o código existente.
+
+L - Liskov Substitution Principle (LSP): Objetos de uma classe base devem poder ser substituídos por objetos de uma classe derivada sem alterar o comportamento desejado do sistema.
+
+I - Interface Segregation Principle (ISP): Uma interface deve ser específica e não forçar implementações a depender de métodos que não utilizam, promovendo interfaces mais coesas.
+
+D - Dependency Inversion Principle (DIP): Dependências devem ser baseadas em abstrações (interfaces), não em implementações concretas, o que promove a flexibilidade e desacoplamento.
+
+Esses princípios ajudam a criar sistemas mais flexíveis, reutilizáveis e fáceis de manter.
 
